@@ -1,8 +1,9 @@
-import './App.css';
+import { CatWikiPage } from './pages/CatWikiPage';
+import './styles.css';
 
 function HomeApp() {
   return (
-    <h1>CatWiki App</h1>
+    <CatWikiPage />
   );
 }
 
