@@ -11,10 +11,15 @@ export const LandingPage = () => {
             <h4>Get to know more about your cat breed</h4>
             <div className="search-input">
                 <input type="text" placeholder='Enter your breed' />
-                <button>Icon</button>
+                <button>
+                    <span class="material-symbols-outlined with-customize">
+                        search
+                    </span>
+                </button>
             </div>
+            
         </div>
-        <div className="row">
+        <div className="row row-secondary">
             <h6>Most Searched Breeds</h6>
 
             <h1>66 + Breeds for you to discover</h1>

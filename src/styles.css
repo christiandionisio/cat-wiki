@@ -24,14 +24,16 @@ html {
 
 /* END Navbar styles */
 
+
 .homepage-screen {
     width: 100%;
     padding: 0 5%;
 }
 
 
+/* LandingPage styles */
+
 .landing-page {
-    background-color: red;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -39,7 +41,8 @@ html {
 }
 
 .row {
-    border-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
     width: 90%;
     background-color: blue;
     padding: 8% 5%;
@@ -50,7 +53,7 @@ html {
 
 .row .logo {
     width: 50%;
-    margin: 0;
+    filter: brightness(0) invert(1);
 }
 
 .row h4 {
@@ -58,5 +61,58 @@ html {
     margin: 0;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 2.3vw;
+    color: #FFFFFF;
 }
+
+.search-input {
+    background: #FFFFFF;
+    border-radius: 59px;
+    width: 35%;
+    height: 50px;
+
+    margin-top: 40px;
+    padding: 0 2%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.search-input input {
+    border: none;
+    width: 70%;
+
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.search-input button {
+    border: none;
+    background-color: #FFFFFF;
+    width: 10%;
+
+    cursor: pointer;
+}
+
+.with-customize {
+    font-size: 2.1vw;
+}
+
+
+.search-input input:focus {
+    outline: none;
+}
+
+.row-secondary {
+    background-image: none;
+    background-color: #E3E1DC;
+    
+    border-radius: 0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+/* END LandingPage styles */
