@@ -1,5 +1,5 @@
 import React from 'react'
-import { CatWikiLogo } from './CatWikiLogo'
+import { CatWikiLogo } from '../CatWikiLogo'
 
 export const Navbar = () => {
   return (

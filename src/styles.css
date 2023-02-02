@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar styles */
+
+.navbar {
+    padding: 2% 0;
+}
+.navbar .logo {
+    width: 13%;
+}
+
+/* END Navbar styles */
+
+.homepage-screen {
+    width: 100%;
+    padding: 0 5%;
+}
+
+
+.landing-page {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 24px;
+}
+
+.row {
+    border-radius: 24px;
+    width: 90%;
+    background-color: blue;
+    padding: 8% 5%;
+    background-image: url("./assets/HeroImagelg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.row .logo {
+    width: 50%;
+    margin: 0;
+}
+
+.row h4 {
+    width: 40%;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
