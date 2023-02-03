@@ -13,7 +13,12 @@ export const CatInfoSection = () => {
                 lower your stress and anxiety leves
             </p>
 
-            <a href="">READ MORE</a>
+            <a href="" className='redirect-link'>
+                READ MORE &nbsp;
+                <span className="material-symbols-outlined">
+                    arrow_forward
+                </span>
+            </a>
         </div>
         <div className="column2">
             <div className="column-img1">

@@ -31,7 +31,7 @@ export const LandingPage = () => {
 
             <div className="secondary-title">
                 <h1>66 + Breeds for you to discover</h1>
-                <a href="">
+                <a href="" className='redirect-link'>
                     SEE MORE &nbsp;
                     <span className="material-symbols-outlined">
                         arrow_forward
