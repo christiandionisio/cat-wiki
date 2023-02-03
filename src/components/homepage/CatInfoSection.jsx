@@ -16,12 +16,21 @@ export const CatInfoSection = () => {
             <a href="">READ MORE</a>
         </div>
         <div className="column2">
-            <div className="column-img">
-                <img src={require('../../assets/image1.png')} alt="image1" />
-                <img src={require('../../assets/image2.png')} alt="image1" />
+            <div className="column-img1">
+                <img src={require('../../assets/image2.png')} 
+                    alt="image2"
+                    className='image1' 
+                />
+                <img src={require('../../assets/image1.png')} 
+                    alt="image1"
+                    className='image2' 
+                />
             </div>
-            <div className="column-img">
-                <img src={require('../../assets/image3.png')} alt="image3" />
+            <div className="column-img2">
+                <img src={require('../../assets/image3.png')} 
+                    alt="image3"
+                    className='image3' 
+                />
             </div>
         </div>
         
