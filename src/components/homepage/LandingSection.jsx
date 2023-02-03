@@ -1,7 +1,7 @@
 import React from 'react'
 import { CatWikiLogo } from '../CatWikiLogo'
 
-export const LandingPage = () => {
+export const LandingSection = () => {
   return (
     <div className="landing-page">
         <div className="row">
