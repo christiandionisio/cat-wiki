@@ -276,4 +276,35 @@ html {
     width: 100%;
 }
 
+/* END CatInfoSection styles */
+
+
+/* FooterSection styles */
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #000;
+    color: white;
+    width: 80%;
+    padding: 2% 5%;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+}
+
+.footer-section .logo {
+    width: 15%;
+    filter: brightness(0) invert(1);
+}
+
+.footer-section h6 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.2vw;
+}
+
+/* END FooterSection styles */
 
