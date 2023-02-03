@@ -33,10 +33,22 @@ export const LandingPage = () => {
                 </a>
             </div>
 
-
-            <div className="cats-cards">
-                <div className="card">
-
+            <div className="cards">
+                <div className="cat-card">
+                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
+                    <h4 className='cat-card-title'>Bengal</h4>
+                </div>
+                <div className="cat-card">
+                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
+                    <h4 className='cat-card-title'>Bengal</h4>
+                </div>
+                <div className="cat-card">
+                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
+                    <h4 className='cat-card-title'>Bengal</h4>
+                </div>
+                <div className="cat-card">
+                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
+                    <h4 className='cat-card-title'>Bengal</h4>
                 </div>
             </div>
 
