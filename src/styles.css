@@ -41,14 +41,14 @@ html {
 }
 
 .row {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
     width: 90%;
-    background-color: blue;
     padding: 8% 5%;
+    
     background-image: url("./assets/HeroImagelg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
 .row .logo {
@@ -113,6 +113,60 @@ html {
     border-radius: 0;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
+    padding: 3% 5%;
 }
 
+.row-secondary h6 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.9vw;
+
+    color: #291507;
+}
+
+.hr-line {
+    background-color: red;
+    width: 8%;
+    border: 1px solid #4D270C;
+    border-radius: 77px;
+    margin-left: 0;
+}
+
+.secondary-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.secondary-title h1 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 5.5vw;
+
+    color: #291507;
+    width: 65%;
+}
+
+.secondary-title a {
+    all: unset;
+
+    width: 18%;
+    padding: 1% 0;
+    align-self: flex-end;
+    cursor: pointer;
+    color: rgba(41, 21, 7, 0.6);
+
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.7vw;
+}
+
+.secondary-title a span {
+    width: 18%;
+    font-size: 2.5vw;
+    vertical-align: middle;
+}
 /* END LandingPage styles */

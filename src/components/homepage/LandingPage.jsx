@@ -21,8 +21,18 @@ export const LandingPage = () => {
         </div>
         <div className="row row-secondary">
             <h6>Most Searched Breeds</h6>
+            <hr className='hr-line'/>
 
-            <h1>66 + Breeds for you to discover</h1>
+            <div className="secondary-title">
+                <h1>66 + Breeds for you to discover</h1>
+                <a href="">
+                    SEE MORE &nbsp;
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </div>
+
 
             <div className="cats-cards">
                 <div className="card">
