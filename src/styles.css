@@ -341,3 +341,21 @@ html {
 
 /* END FooterSection styles */
 
+
+@media (max-width: 600px) {
+
+    /* NavberSection styles */
+
+    .navbar {
+        margin-bottom: 15px;
+    }
+
+    .navbar .logo {
+        width: 35%;
+    }
+
+    /* END NavberSection styles */
+
+
+}
+
