@@ -12,7 +12,7 @@ export const LandingPage = () => {
             <div className="search-input">
                 <input type="text" placeholder='Enter your breed' />
                 <button>
-                    <span class="material-symbols-outlined with-customize">
+                    <span className="material-symbols-outlined with-customize">
                         search
                     </span>
                 </button>
