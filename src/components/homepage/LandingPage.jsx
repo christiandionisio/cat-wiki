@@ -10,13 +10,19 @@ export const LandingPage = () => {
             </div>
             <h4>Get to know more about your cat breed</h4>
             <div className="search-input">
-                <input type="text" placeholder='Enter your breed' />
+                <input list='search-cats' type="text" placeholder='Enter your breed' />
                 <button>
                     <span className="material-symbols-outlined with-customize">
                         search
                     </span>
                 </button>
             </div>
+
+            <datalist id='search-cats'>
+                <option value="Gato con botas"></option>
+                <option value="Gato Felix"></option>
+                <option value="Gatubela"></option>
+            </datalist>
             
         </div>
         <div className="row row-secondary">
@@ -27,7 +33,7 @@ export const LandingPage = () => {
                 <h1>66 + Breeds for you to discover</h1>
                 <a href="">
                     SEE MORE &nbsp;
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         arrow_forward
                     </span>
                 </a>
