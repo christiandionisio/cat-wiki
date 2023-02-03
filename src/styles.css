@@ -132,7 +132,6 @@ html {
 }
 
 .hr-line {
-    background-color: red;
     width: 8%;
     border: 1px solid #4D270C;
     border-radius: 77px;
@@ -208,3 +207,42 @@ html {
 /* END row2 styles */
 
 /* END LandingPage styles */
+
+
+
+/* CatInfoSection styles */
+
+.cat-info-section {
+    margin: 70px 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column1 h1 {
+    margin: 5px 0;
+    width: 80%;
+    color: #291507;
+
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 4.8vw;
+}
+
+.column1 p {
+    margin: 40px 0;
+    width: 90%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 18px;
+
+    color: #291507;
+}
+
+
