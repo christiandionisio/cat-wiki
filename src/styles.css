@@ -351,10 +351,40 @@ html {
     }
 
     .navbar .logo {
-        width: 35%;
+        width: 30%;
     }
 
     /* END NavberSection styles */
+
+    
+
+    /* LandingSection styles */
+
+    .row {
+        aspect-ratio: 5/2;
+    }
+
+    .row h4 {
+        font-size: 3vw;
+    }
+
+    .search-input {
+        margin-top: 20px;
+        border-radius: 12px;
+        height: fit-content;
+        width: 30%;
+        padding: 2% 3%;
+    }
+
+    .search-input input {
+        font-size: 2vw;
+    }
+
+    .search-input button span {
+        font-size: 2vw;
+    }
+
+    /* END LandingSection styles */
 
 
 }
