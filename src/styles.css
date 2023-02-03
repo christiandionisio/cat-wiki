@@ -107,6 +107,34 @@ html {
     outline: none;
 }
 
+.dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 5px;
+    
+    background-color: #FFFFFF;
+    max-height: 170px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    border-radius: 20px;
+    width: 31%;
+}
+
+.dropdown-content a {
+    all: unset;
+    cursor: pointer;
+    padding: 4% 6%;
+    font-size: 1.3vw;
+    border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+    background: rgba(151, 151, 151, 0.1);
+}
+
 /* END row1 styles */
 
 

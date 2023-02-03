@@ -18,11 +18,14 @@ export const LandingSection = () => {
                 </button>
             </div>
 
-            <datalist id='search-cats'>
-                <option value="Gato con botas"></option>
-                <option value="Gato Felix"></option>
-                <option value="Gatubela"></option>
-            </datalist>
+            <div className='dropdown-content'>
+                <a href='#'>Gato con botas</a>
+                <a href='#'>Gato Felix</a>
+                <a href='#'>Gatubela</a>
+                <a href='#'>Gato con botas</a>
+                <a href='#'>Gato Felix</a>
+                <a href='#'>Gatubela</a>
+            </div>
             
         </div>
         <div className="row row-secondary">
