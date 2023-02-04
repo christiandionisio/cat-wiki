@@ -356,7 +356,6 @@ html {
 
     /* END NavberSection styles */
 
-    
 
     /* LandingSection styles */
 
@@ -385,6 +384,20 @@ html {
     .search-input button span {
         font-size: 2vw;
     }
+
+    .dropdown-content {
+        border-radius: 10px;
+        max-height: 120px;
+        width: 25%;
+    }
+
+    .dropdown-content a {
+        padding: 6% 8%;
+        font-size: 3vw;
+        border-radius: 20px;
+    }
+
+
 
     .row-secondary h6 {
         font-size: 2.7vw;
