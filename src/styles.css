@@ -443,6 +443,29 @@ html {
 
 
 
+    /* FooterSection styles */
+
+    .footer-section {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section .logo {
+        width: 35%;
+        padding: 2% 4%;
+    }
+
+    .footer-section h6 {
+        margin: 0;
+        font-size: 3.1vw;
+    }
+
+    /* END FooterSection styles */
+
+
+
 
 }
 
