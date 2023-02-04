@@ -395,8 +395,8 @@ html {
     }
 
     .redirect-link {
-        width: 25%;
-        font-size: 2.7vw;
+        width: 30%;
+        font-size: 3vw;
     }
 
     .cards {
@@ -414,6 +414,33 @@ html {
     }
 
     /* END LandingSection styles */
+
+    /* CatInfoSection styles */
+
+    .cat-info-section {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cat-info-section {
+        padding: 0;
+        width: 90%;
+    }
+
+    .column1 h1 {
+        width: 100%;
+        font-size: 11.5vw;
+    }
+
+    .column1 p {
+        margin: 20px 0;
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    /* END CatInfoSection styles */
+
 
 
 
