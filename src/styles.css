@@ -344,10 +344,20 @@ html {
 
 @media (max-width: 600px) {
 
+    .homepage-screen {
+        width: 100%;
+        padding: 0;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* NavberSection styles */
 
     .navbar {
         margin-bottom: 15px;
+        width: 90%;
     }
 
     .navbar .logo {
@@ -365,24 +375,29 @@ html {
         width: 80%;
     }
 
+    .row .logo {
+        width: 55%;
+    }
+
     .row h4 {
-        font-size: 3vw;
+        width: 50%;
+        font-size: 3.5vw;
     }
 
     .search-input {
         margin-top: 20px;
         border-radius: 12px;
         height: fit-content;
-        width: 30%;
+        width: 45%;
         padding: 2% 3%;
     }
 
     .search-input input {
-        font-size: 2vw;
+        font-size: 2.8vw;
     }
 
     .search-input button span {
-        font-size: 2vw;
+        font-size: 2.8vw;
     }
 
     .dropdown-content {
@@ -408,7 +423,7 @@ html {
     }
 
     .redirect-link {
-        width: 30%;
+        width: 32%;
         font-size: 3vw;
     }
 
@@ -434,6 +449,7 @@ html {
         margin-top: 40px;
         flex-direction: column;
         gap: 40px;
+        margin-right: 0;
     }
 
     .cat-info-section {
