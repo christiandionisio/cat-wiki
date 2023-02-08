@@ -1,9 +1,10 @@
-import { CatWikiPage } from './pages/CatWikiPage';
+import { CatPage } from './pages/CatPage';
+// import { Homepage } from './pages/Homepage';
 import './styles.css';
 
 function HomeApp() {
   return (
-    <CatWikiPage />
+    <CatPage />
   );
 }
 

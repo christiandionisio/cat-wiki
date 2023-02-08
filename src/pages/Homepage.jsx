@@ -4,7 +4,7 @@ import { FooterSection } from '../components/homepage/FooterSection'
 import { LandingSection } from '../components/homepage/LandingSection'
 import { Navbar } from '../components/ui/Navbar'
 
-export const CatWikiPage = () => {
+export const Homepage = () => {
   return (
     <div className='homepage-screen'>
         <Navbar />
