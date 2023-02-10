@@ -24,10 +24,10 @@ export const CatPageInfoSection = () => {
           <div className="catpage-cat-feature">
             <strong>Adaptability:</strong>
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
               <div className="catpage-level"></div>
             </div>
           </div>
@@ -35,32 +35,32 @@ export const CatPageInfoSection = () => {
           <div className="catpage-cat-feature">
             <strong>Affection level:</strong>
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
             </div>
           </div>
 
           <div className="catpage-cat-feature">
             <strong>Child Friendly:</strong> 
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
             </div>
           </div>
 
           <div className="catpage-cat-feature">
             <strong>Grooming:</strong>   
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
               <div className="catpage-level"></div>
             </div>
           </div>
@@ -68,31 +68,31 @@ export const CatPageInfoSection = () => {
           <div className="catpage-cat-feature">
             <strong>Intelligence:</strong>
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
             </div>
           </div>
 
           <div className="catpage-cat-feature">
             <strong>Health issues</strong>
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
             </div>
           </div>
 
           <div className="catpage-cat-feature">
             <strong>Social needs: </strong> 
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
               <div className="catpage-level"></div>
               <div className="catpage-level"></div>
             </div>
@@ -101,10 +101,10 @@ export const CatPageInfoSection = () => {
           <div className="catpage-cat-feature">
             <strong>Stranger friendly: </strong> 
             <div className="catpage-level-rate">
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
-              <div className="catpage-level"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
+              <div className="catpage-level catpage-level-active"></div>
               <div className="catpage-level"></div>
             </div>
           </div>

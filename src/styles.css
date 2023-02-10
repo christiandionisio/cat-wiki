@@ -433,10 +433,14 @@ html {
 
 .catpage-level {
     width: 20%;
-    background: #544439;
+    background: #E0E0E0;
     width: 60px;
     height: 12px;
     border-radius: 8px;
+}
+
+.catpage-level-active {
+    background: #544439;
 }
 
 /* END CatPageInfoSection styles */
