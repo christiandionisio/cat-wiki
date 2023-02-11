@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/components/homepage/CatInfoSection.css'
 
 export const CatInfoSection = () => {
   return (

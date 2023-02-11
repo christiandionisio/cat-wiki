@@ -26,73 +26,6 @@ html {
 
 
 
-/* CatInfoSection styles */
-
-.cat-info-section {
-    padding: 0 5%;
-    margin: 70px 0;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-}
-
-.column1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.column1 h1 {
-    margin: 5px 0;
-    width: 80%;
-    color: #291507;
-
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 4.8vw;
-}
-
-.column1 p {
-    margin: 40px 0;
-    width: 70%;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 1.5vw;
-
-    color: #291507;
-}
-
-.column2 {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.column-img1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-end;
-    width: 50%;
-}
-
-.column-img2 {
-    width: 50%;
-}
-
-.column2 .image1 {
-    width: 100%;
-}
-
-.column2 .image2 {
-    width: 85%;
-}
-
-.column2 .image3 {
-    width: 100%;
-}
-
-/* END CatInfoSection styles */
 
 
 /* FooterSection styles */
@@ -255,36 +188,6 @@ html {
         width: 100%;
         padding: 0;
     }
-
-
-    
-
-    /* CatInfoSection styles */
-
-    .cat-info-section {
-        margin-top: 40px;
-        flex-direction: column;
-        gap: 40px;
-        margin-right: 0;
-    }
-
-    .cat-info-section {
-        padding: 0;
-        width: 90%;
-    }
-
-    .column1 h1 {
-        width: 100%;
-        font-size: 11.5vw;
-    }
-
-    .column1 p {
-        margin: 20px 0;
-        width: 100%;
-        font-size: 5vw;
-    }
-
-    /* END CatInfoSection styles */
 
 
 
