@@ -1,7 +1,7 @@
 import React from 'react'
 import { CatInfoSection } from '../components/homepage/CatInfoSection'
-import { FooterSection } from '../components/homepage/FooterSection'
 import { LandingSection } from '../components/homepage/LandingSection'
+import { FooterSection } from '../components/ui/FooterSection'
 import { Navbar } from '../components/ui/Navbar'
 
 export const Homepage = () => {
