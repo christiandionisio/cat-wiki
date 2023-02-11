@@ -1,5 +1,6 @@
 import React from 'react'
 import { CatWikiLogo } from '../CatWikiLogo'
+import '../../styles/components/homepage/LandingSection.css'
 
 export const LandingSection = () => {
   return (
