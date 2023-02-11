@@ -114,12 +114,16 @@ export const CatPageInfoSection = () => {
       </div>
       <div className="catpage-others">
         <h1>Other Photos</h1>
-        <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-        <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-        <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-        <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-        <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-        <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+        <div className="list-photos">
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+        </div>
       </div>
     </div>
   )
