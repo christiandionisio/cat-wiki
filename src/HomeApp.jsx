@@ -1,10 +1,10 @@
-import { CatPage } from './pages/CatPage';
-// import { Homepage } from './pages/Homepage';
+// import { CatPage } from './pages/CatPage';
+import { Homepage } from './pages/Homepage';
 import './styles.css';
 
 function HomeApp() {
   return (
-    <CatPage />
+    <Homepage />
   );
 }
 

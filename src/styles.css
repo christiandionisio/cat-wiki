@@ -13,18 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navbar styles */
 
-.navbar {
-    width: 90%;
-    margin-bottom: 10px;
-    padding: 2% 0;
-}
-.navbar .logo {
-    width: 13%;
-}
-
-/* END Navbar styles */
 
 
 .homepage-screen {
@@ -477,19 +466,6 @@ html {
         width: 100%;
         padding: 0;
     }
-
-    /* NavberSection styles */
-
-    .navbar {
-        margin-bottom: 15px;
-        width: 90%;
-    }
-
-    .navbar .logo {
-        width: 30%;
-    }
-
-    /* END NavberSection styles */
 
 
     /* LandingSection styles */
