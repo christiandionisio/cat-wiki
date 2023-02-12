@@ -184,14 +184,13 @@
         gap: 5%;
     }
 
-
     .catpage-info-column1 img {
         width: 100%;
         border-radius: 20px;
     }
 
     .catpage-info-column2 {
-        width: 60%;
+        width: 55%;
         padding: 0 3%;
         
     }
@@ -237,7 +236,55 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-/* Your styles go here */
+
+    .catpage-main-info {
+        gap: 3%;
+    }
+
+    .catpage-info-column1 img {
+        width: 90%;
+    }
+
+    .catpage-info-column2 {
+        width: 80%;
+        padding: 0 6%;
+        
+    }
+
+    .catpage-info-column2 h2 {
+        font-size: 3.5vw;
+    }
+
+    .catpage-info-column2 p {
+        font-size: 1.5vw;
+    }
+
+    .catpage-info-column2 h6 {
+        font-size: 1.1vw;
+    }
+
+    .catpage-cat-feature {
+        width: 100%;
+    }
+
+    .catpage-cat-feature strong {
+        font-size: 1.1vw;
+    }
+
+
+    .catpage-others {
+        margin: 100px 0;
+    }
+
+    .catpage-others h1 {
+        font-size: 3.5vw;
+    }
+
+    .list-photos {
+        margin: 50px 0;
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+        gap: 2%;
+    }
 }
 
 /* END CatPageInfoSection styles */
