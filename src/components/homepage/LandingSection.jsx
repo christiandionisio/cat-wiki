@@ -2,10 +2,19 @@ import React from 'react'
 import { CatWikiLogo } from '../CatWikiLogo'
 import '../../styles/components/homepage/LandingSection.css'
 import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export const LandingSection = () => {
 
     const navigate = useNavigate();
+    const [bgImageLoaded, setBgImageLoaded] = useState(false);
+
+    useEffect(() => {
+        const image = new Image();
+        image.src = require('../../assets/HeroImagelg.png');
+        image.onload = () => setBgImageLoaded(true);
+    }, []);
 
     const goToCatPage = () => {
         navigate("/cat/1234");
@@ -13,7 +22,9 @@ export const LandingSection = () => {
 
   return (
     <div className="landing-page">
-        <div className="row">
+        <div className={`row bg-image ${bgImageLoaded ? "bg-loaded" : ""}`}
+            onLoad={() => setBgImageLoaded(true)}
+        >
             <div className="logo">
                 <CatWikiLogo />
             </div>

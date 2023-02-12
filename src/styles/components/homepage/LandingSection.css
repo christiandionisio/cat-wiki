@@ -12,12 +12,21 @@
     width: 90%;
     padding: 8% 5%;
     
-    background-image: url("../../../assets/HeroImagelg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
 }
+
+.bg-image {
+    background-image: url("../../../assets/HeroImagelg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.bg-loaded {
+    opacity: 1;
+  }
 
 .row .logo {
     width: 50%;
