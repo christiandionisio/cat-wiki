@@ -1,0 +1,135 @@
+/* CatPageInfoSection styles */
+
+.catpage-screen {
+    padding: 0 6%;
+}
+
+.catpage-main-info {
+    padding: 0 2%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.catpage-info-column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catpage-info-column1 img {
+    width: 70%;
+    border-radius: 20px;
+}
+
+.catpage-info-column2 {
+    width: 100%;
+    padding: 0 10%;
+}
+
+.catpage-info-column2 h2 {
+    margin: 0;
+
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 2.8vw;
+
+    color: #291507;
+}
+
+.catpage-info-column2 p {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.2vw;
+
+    color: #291507;
+    width: 100%;
+
+}
+
+.catpage-info-column2 h6 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.catpage-list-features {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.catpage-cat-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+}
+
+.catpage-cat-feature strong {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.1vw;
+}
+
+.catpage-level-rate {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.catpage-level {
+    width: 20%;
+    background: #E0E0E0;
+    width: 60px;
+    height: 12px;
+    border-radius: 8px;
+}
+
+.catpage-level-active {
+    background: #544439;
+}
+
+.catpage-others {
+    margin: 100px 0;
+}
+
+.catpage-others h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 3.1vw;
+
+    color: #291507;
+}
+
+.list-photos {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    gap: 30px;
+}
+
+.list-photos img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+@media (max-width: 767px) {
+/* Your styles go here */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* Your styles go here */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+/* Your styles go here */
+}
+
+/* END CatPageInfoSection styles */

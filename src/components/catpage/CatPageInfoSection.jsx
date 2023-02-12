@@ -1,4 +1,5 @@
 import React from 'react'
+import  '../../styles/components/catpage/CatPageInfoSection.css'
 
 export const CatPageInfoSection = () => {
   return (
