@@ -1,8 +1,16 @@
 import React from 'react'
 import { CatWikiLogo } from '../CatWikiLogo'
 import '../../styles/components/homepage/LandingSection.css'
+import { useNavigate } from "react-router-dom";
 
 export const LandingSection = () => {
+
+    const navigate = useNavigate();
+
+    const goToCatPage = () => {
+        navigate("/cat/1234");
+    }
+
   return (
     <div className="landing-page">
         <div className="row">
@@ -20,12 +28,12 @@ export const LandingSection = () => {
             </div>
 
             <div className='dropdown-content'>
-                <a href='#'>Gato con botas</a>
-                <a href='#'>Gato Felix</a>
-                <a href='#'>Gatubela</a>
-                <a href='#'>Gato con botas</a>
-                <a href='#'>Gato Felix</a>
-                <a href='#'>Gatubela</a>
+                <a href='/cat/1234'>Gato con botas</a>
+                <a href='/cat/1234'>Gato Felix</a>
+                <a href='/cat/1234'>Gatubela</a>
+                <a href='/cat/1234'>Gato con botas</a>
+                <a href='/cat/1234'>Gato Felix</a>
+                <a href='/cat/1234'>Gatubela</a>
             </div>
             
         </div>
@@ -44,19 +52,19 @@ export const LandingSection = () => {
             </div>
 
             <div className="cards">
-                <div className="cat-card">
+                <div className="cat-card" onClick={goToCatPage}>
                     <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
                     <h4 className='cat-card-title'>Bengal</h4>
                 </div>
-                <div className="cat-card">
+                <div className="cat-card" onClick={goToCatPage}>
                     <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
                     <h4 className='cat-card-title'>Bengal</h4>
                 </div>
-                <div className="cat-card">
+                <div className="cat-card" onClick={goToCatPage}>
                     <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
                     <h4 className='cat-card-title'>Bengal</h4>
                 </div>
-                <div className="cat-card">
+                <div className="cat-card" onClick={goToCatPage}>
                     <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
                     <h4 className='cat-card-title'>Bengal</h4>
                 </div>
