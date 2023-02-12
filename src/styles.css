@@ -24,6 +24,10 @@ html {
     align-items: center;
 }
 
+.container {
+    padding: 0 3%;
+}
+
 
 
 /* CatPageInfoSection styles */

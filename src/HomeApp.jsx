@@ -1,10 +1,11 @@
-// import { CatPage } from './pages/CatPage';
-import { Homepage } from './pages/Homepage';
 import './styles.css';
+import {AppRouter} from './routes/AppRouter'
 
 function HomeApp() {
   return (
-    <Homepage />
+    <div className="container">
+      <AppRouter/>
+    </div>
   );
 }
 
