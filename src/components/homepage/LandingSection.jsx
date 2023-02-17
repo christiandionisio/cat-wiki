@@ -1,4 +1,3 @@
-import React from 'react'
 import { CatWikiLogo } from '../CatWikiLogo'
 import '../../styles/components/homepage/LandingSection.css'
 import { useNavigate } from "react-router-dom";
@@ -15,6 +14,7 @@ export const LandingSection = () => {
         image.src = require('../../assets/HeroImagelg.png');
         image.onload = () => setBgImageLoaded(true);
     }, []);
+    
 
     const goToCatPage = () => {
         navigate("/cat/1234");

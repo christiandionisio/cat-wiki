@@ -6,13 +6,14 @@ import { CatPage } from '../pages/CatPage'
 import { Homepage } from '../pages/Homepage'
 
 export const AppRouter = () => {
+  
   return (
     <BrowserRouter>
 
         <Navbar />
         
         <Routes>
-            <Route path='/' element={<Homepage />} />
+            <Route path='/' exact element={<Homepage />} />
             <Route path='cat/:catId' element={<CatPage />} />
         </Routes>
 
