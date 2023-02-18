@@ -3,18 +3,27 @@ import '../../styles/components/homepage/LandingSection.css'
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { fetchCatWiki } from "../../helpers/fetch_catwiki";
 
 export const LandingSection = () => {
 
     const navigate = useNavigate();
     const [bgImageLoaded, setBgImageLoaded] = useState(false);
+    const [catList, setCatList] = useState([]);
+
+    const getCatWikiData = async () => {
+        const resp = await fetchCatWiki('images/search?limit=4&has_breeds=1&size=small', 'GET');
+        const body = await resp.json();
+        setCatList(body);
+    }
 
     useEffect(() => {
         const image = new Image();
         image.src = require('../../assets/HeroImagelg.png');
         image.onload = () => setBgImageLoaded(true);
+
+        getCatWikiData();
     }, []);
-    
 
     const goToCatPage = () => {
         navigate("/cat/1234");
@@ -63,22 +72,15 @@ export const LandingSection = () => {
             </div>
 
             <div className="cards">
-                <div className="cat-card" onClick={goToCatPage}>
-                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
-                    <h4 className='cat-card-title'>Bengal</h4>
-                </div>
-                <div className="cat-card" onClick={goToCatPage}>
-                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
-                    <h4 className='cat-card-title'>Bengal</h4>
-                </div>
-                <div className="cat-card" onClick={goToCatPage}>
-                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
-                    <h4 className='cat-card-title'>Bengal</h4>
-                </div>
-                <div className="cat-card" onClick={goToCatPage}>
-                    <img src={require('../../assets/cat-image-example.jpeg')} alt="" />
-                    <h4 className='cat-card-title'>Bengal</h4>
-                </div>
+                {
+                    catList.map(cat => (
+                        <div key={cat.id} className="cat-card" onClick={goToCatPage}>
+                            <img src={cat.url} alt="" />
+                            <h4 className='cat-card-title'> {cat.breeds[0].name} </h4>
+                        </div>
+                    ))
+                }
+                
             </div>
 
         </div>
