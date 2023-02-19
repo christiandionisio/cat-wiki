@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { fetchCatWiki } from "../../helpers/fetch_catwiki";
+import 'animate.css';
 
 export const LandingSection = () => {
 
@@ -21,6 +22,8 @@ export const LandingSection = () => {
         const image = new Image();
         image.src = require('../../assets/HeroImagelg.png');
         image.onload = () => setBgImageLoaded(true);
+
+        console.log('I fire once');
 
         getCatWikiData();
     }, []);
@@ -73,12 +76,14 @@ export const LandingSection = () => {
 
             <div className="cards">
                 {
-                    catList.map(cat => (
-                        <div key={cat.id} className="cat-card" onClick={goToCatPage}>
-                            <img src={cat.url} alt="" />
-                            <h4 className='cat-card-title'> {cat.breeds[0].name} </h4>
-                        </div>
-                    ))
+                    (catList.length === 0)
+                        ? (<div>Cargando...</div>)
+                        : catList.map(cat => (
+                            <div key={cat.id} className="animate__animated animate__fadeIn animate__delay-1s cat-card" onClick={goToCatPage}>
+                                <img src={cat.url} alt="" />
+                                <h4 className='cat-card-title'> {cat.breeds[0].name} </h4>
+                            </div>
+                        ))
                 }
                 
             </div>
