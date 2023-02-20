@@ -1,115 +1,119 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom';
+import { fetchCatWiki } from '../../helpers/fetch_catwiki';
 import  '../../styles/components/catpage/CatPageInfoSection.css'
+import { CatPageFeatureLevelRate } from './CatPageFeatureLevelRate';
 
 export const CatPageInfoSection = () => {
+
+  const location = useLocation();
+
+  const [catData, setCatData] = useState([]);
+
+    const getCatWikiData = async () => {
+        const pathDataArray = location.pathname.split('/')
+
+        const resp = await fetchCatWiki(`images/search?breed_ids=${pathDataArray[pathDataArray.length-1]}&limit=1&has_breeds=1&size=small`, 'GET');
+        const body = await resp.json();
+        setCatData(body);
+    }
+
+    useEffect(() => {
+      getCatWikiData();
+    }, [])
+
+    useEffect(() => {
+      console.log(catData);
+    }, [catData])
+    
+
   return (
     <div className="catpage-info-section">
       <div className="catpage-main-info">
         <div className="catpage-info-column1">
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          <img src={(catData.length === 0) ? 'https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg': catData[0].url} alt="cat_image" />
         </div>
         <div className="catpage-info-column2">
-          <h2>Bengal</h2>
-          <p>
-            Bengals are a lot of fun to live with, but the're defintely not the
-            cat for everyone, or for fisrt-time cat owners. Extremly
-            intelligent, curious and active, they demand a lot of interaction
-            and woe betide the owner who doesn't provide it.
-          </p>
+          <h2>{(catData.length > 0)&&catData[0].breeds[0].name}</h2>
+          <p>{(catData.length > 0)&&catData[0].breeds[0].description}</p>
 
-          <h6><strong>Temperament: </strong> Alert, Agile, Energetic, Demanding, Intelligent</h6>
-          <h6><strong>Origin: </strong> United States</h6>
-          <h6><strong>Life Span: </strong> 12 - 15 years</h6>
+          <h6><strong>Temperament: </strong>{(catData.length > 0)&&catData[0].breeds[0].temperament}</h6>
+          <h6><strong>Origin: </strong>{(catData.length > 0)&&catData[0].breeds[0].origin}</h6>
+          <h6><strong>Life Span: </strong> {(catData.length > 0)&&catData[0].breeds[0].life_span} years</h6>
 
-          <h6><strong>Life Span: </strong> 12 - 15 years</h6>
           <div className="catpage-list-features">
-            <div className="catpage-cat-feature">
-              <strong>Adaptability:</strong>
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Adaptability'}
+                    featureRate={catData[0].breeds[0].adaptability} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Affection level:</strong>
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Affection level'}
+                    featureRate={catData[0].breeds[0].affection_level} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Child Friendly:</strong> 
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Child Friendly'}
+                    featureRate={catData[0].breeds[0].child_friendly} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Grooming:</strong>   
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Grooming'}
+                    featureRate={catData[0].breeds[0].grooming} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Intelligence:</strong>
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Intelligence'}
+                    featureRate={catData[0].breeds[0].intelligence} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Health issues</strong>
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Health issues'}
+                    featureRate={catData[0].breeds[0].health_issues} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Social needs: </strong> 
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level"></div>
-                <div className="catpage-level"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Social needs'}
+                    featureRate={catData[0].breeds[0].social_needs} 
+                    />
+                )
+              }
 
-            <div className="catpage-cat-feature">
-              <strong>Stranger friendly: </strong> 
-              <div className="catpage-level-rate">
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level catpage-level-active"></div>
-                <div className="catpage-level"></div>
-              </div>
-            </div>
+              {
+                catData.length > 0 && (
+                  <CatPageFeatureLevelRate 
+                    featureName={'Stranger friendly'}
+                    featureRate={catData[0].breeds[0].stranger_friendly} 
+                    />
+                )
+              }
+
           </div>
         </div>
       </div>

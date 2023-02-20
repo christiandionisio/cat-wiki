@@ -26,8 +26,8 @@ export const LandingSection = () => {
         getCatWikiData();
     }, []);
 
-    const goToCatPage = (id) => {
-        navigate(`/cat/${id}`);
+    const goToCatPage = (data) => {
+        navigate(`/cat/${data.id}`);
     }
 
   return (
@@ -79,7 +79,7 @@ export const LandingSection = () => {
                         : catList.map(cat => (
                             <div key={cat.id} 
                                 className="animate__animated animate__fadeIn animate__delay-1s cat-card" 
-                                onClick={() => goToCatPage(cat.breeds[0].id)}
+                                onClick={() => goToCatPage(cat.breeds[0])}
                             >
                                 <img src={cat.url} alt="" />
                                 <h4 className='cat-card-title'> {cat.breeds[0].name} </h4>
