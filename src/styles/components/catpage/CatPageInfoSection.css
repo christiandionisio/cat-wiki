@@ -114,6 +114,7 @@
 
 .list-photos img {
     width: 100%;
+    aspect-ratio: 6/7;
     border-radius: 20px;
 }
 

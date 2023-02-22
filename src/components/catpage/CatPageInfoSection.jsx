@@ -9,6 +9,7 @@ export const CatPageInfoSection = () => {
   const location = useLocation();
 
   const [catData, setCatData] = useState([]);
+  const [catPhotos, setCatPhotos] = useState([])
 
     const getCatWikiData = async () => {
         const pathDataArray = location.pathname.split('/')
@@ -18,13 +19,22 @@ export const CatPageInfoSection = () => {
         setCatData(body);
     }
 
+    const getCatWikiPhotos = async () => {
+      const pathDataArray = location.pathname.split('/')
+
+      const resp = await fetchCatWiki(`images/search?breed_ids=${pathDataArray[pathDataArray.length-1]}&limit=8&has_breeds=0&size=small&mime_types=jpg`, 'GET');
+      const body = await resp.json();
+      setCatPhotos(body);
+  }
+
     useEffect(() => {
       getCatWikiData();
+      getCatWikiPhotos();
     }, [])
 
     useEffect(() => {
-      console.log(catData);
-    }, [catData])
+      console.log(catPhotos);
+    }, [catPhotos])
     
 
   return (
@@ -120,14 +130,16 @@ export const CatPageInfoSection = () => {
       <div className="catpage-others">
         <h1>Other Photos</h1>
         <div className="list-photos">
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
-          <img src="https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg" alt="cat_image" />
+          {
+            (catPhotos.length > 0) &&
+            catPhotos.map(catPhoto => (
+              <img 
+                key={catPhoto.id}
+                src={catPhoto.url} 
+                alt="cat_image" 
+              />
+            ))
+          }
         </div>
       </div>
     </div>
