@@ -75,7 +75,7 @@ export const LandingSection = () => {
             <div className="cards">
                 {
                     (catList.length === 0)
-                        ? (<div>Cargando...</div>)
+                        ? (<div class="spinner"></div>)
                         : catList.map(cat => (
                             <div key={cat.id} 
                                 className="animate__animated animate__fadeIn animate__delay-1s cat-card" 
