@@ -8,7 +8,6 @@ export const Homepage = () => {
     <div className='homepage-screen'>
         <LandingSection />
         <CatInfoSection />
-        <p>Agrege un mensaje</p>
     </div>
   )
 }
