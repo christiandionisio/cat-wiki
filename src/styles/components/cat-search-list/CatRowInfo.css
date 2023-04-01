@@ -1,0 +1,28 @@
+
+
+.cat-search-row {
+    margin: 20px 0;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.cat-search-row .col-1 {
+    width: 35%;
+}
+
+.cat-search-row .col-1 img {
+    width: 90%;
+    border-radius: 25px;
+}
+
+.cat-search-row .col-2 h2 {
+    font-size: 2.8vw;
+}
+
+.cat-search-row .col-2 p {
+    width: 80%;
+    font-size: 1.5vw;
+}
