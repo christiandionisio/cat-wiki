@@ -3,14 +3,14 @@ import { useLocation } from 'react-router-dom';
 import { fetchCatWiki } from '../../helpers/fetch_catwiki';
 import  '../../styles/components/catpage/CatPageInfoSection.css'
 import { CatFeatureSection } from './CatFeatureSection';
-import { CatPageFeatureLevelRate } from './CatPageFeatureLevelRate';
+import { CatPhotoSection } from './CatPhotoSection';
 
 export const CatPageInfoSection = () => {
 
   const location = useLocation();
 
   const [catData, setCatData] = useState([]);
-  const [catPhotos, setCatPhotos] = useState([]);
+  
 
     const getCatWikiData = async () => {
         const pathDataArray = location.pathname.split('/')
@@ -20,22 +20,9 @@ export const CatPageInfoSection = () => {
         setCatData(body);
     }
 
-    const getCatWikiPhotos = async () => {
-      const pathDataArray = location.pathname.split('/')
-
-      const resp = await fetchCatWiki(`images/search?breed_ids=${pathDataArray[pathDataArray.length-1]}&limit=8&has_breeds=0&size=small&mime_types=jpg`, 'GET');
-      const body = await resp.json();
-      setCatPhotos(body);
-  }
-
     useEffect(() => {
       getCatWikiData();
-      getCatWikiPhotos();
     }, [])
-
-    useEffect(() => {
-      console.log(catPhotos);
-    }, [catPhotos])
     
 
   return (
@@ -64,23 +51,9 @@ export const CatPageInfoSection = () => {
             </div>
           )
       }
-      <div className="catpage-others">
-        <h1>Other Photos</h1>
-        <div className="list-photos">
-          {
-            (catPhotos.length > 0) 
-              ? (catPhotos.map(catPhoto => (
-                  <img 
-                    key={catPhoto.id}
-                    src={catPhoto.url} 
-                    alt="cat_image" 
-                  />
-                )))
-              : (<div class="spinner"></div>)
-            
-          }
-        </div>
-      </div>
+
+      <CatPhotoSection />
+      
     </div>
   )
 }
