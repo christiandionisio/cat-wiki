@@ -1,0 +1,8 @@
+.cat-list-page h1 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+.cat-list-page .list {
+    margin: 40px 0;
+}

@@ -19,10 +19,14 @@
 }
 
 .cat-search-row .col-2 h2 {
+    font-family: 'Montserrat';
+    font-weight: 900;
     font-size: 2.8vw;
 }
 
 .cat-search-row .col-2 p {
+    font-family: 'Montserrat';
+    font-weight: 500;
     width: 80%;
     font-size: 1.5vw;
 }
