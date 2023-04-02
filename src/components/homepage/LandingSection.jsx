@@ -64,7 +64,7 @@ export const LandingSection = () => {
 
             <div className="secondary-title">
                 <h1>66 + Breeds for you to discover</h1>
-                <a href="" className='redirect-link'>
+                <a href='/search' className='redirect-link'>
                     SEE MORE &nbsp;
                     <span className="material-symbols-outlined">
                         arrow_forward
