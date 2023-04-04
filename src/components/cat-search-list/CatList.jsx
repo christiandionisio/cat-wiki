@@ -19,7 +19,7 @@ export const CatList = () => {
   
 
   return (
-    <div className='cat-list-page'>
+    <div className='cat-list-page animate__animated animate__fadeIn'>
         <h1>Top 10 most searched breeds</h1>
         <div className="list">
           {
