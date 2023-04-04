@@ -11,6 +11,7 @@
 
 .cat-search-row .col-1 {
     width: 25%;
+    cursor: pointer;
 }
 
 .cat-search-row .col-1 img {
